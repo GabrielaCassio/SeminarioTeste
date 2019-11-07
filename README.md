@@ -13,7 +13,7 @@ Obs. Para iniciar o selenium ide, basta clicar no ícone.
 * Expanda a aba "Web" e selecione a opção "Teste";
 * Selecione a opção "Teste de unidade(.NET Framework)" **
 * Nomeie seu projeto e clique no botão "OK"
-#Instalação do Selenium Webdriver
+# Instalação do Selenium Webdriver
 * Clique com o botão direito no projeto e selecione a opção "Manage NuGet Packages"
 * Na tela de pluggins, pocure por "Selenium.Webdriver" e "Selenium.Suport" e instale;
 * Procure por "Webdriver.ChromeDriver.Win32";
