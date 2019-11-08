@@ -1,0 +1,146 @@
+{
+  "id": "5c876441-7de6-4c75-b0fb-e2f70dfcceca",
+  "version": "2.0",
+  "name": "ProjetoTesteSeleniumIDE",
+  "url": "http://grupovirtuous.com.br/matkids/game.php",
+  "tests": [{
+    "id": "4ddd0c37-979a-4d13-b19d-a9db8b827451",
+    "name": "Soma",
+    "commands": [{
+      "id": "322a0fad-644b-4447-88f4-18df72f7c630",
+      "comment": "",
+      "command": "open",
+      "target": "http://grupovirtuous.com.br/matkids/game.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29a61773-f50e-4f75-86ec-947347613652",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "777a987d-2733-4804-b977-4332eeaa0a66",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=p:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62db3f15-eff8-44c7-87d4-33f22adefaae",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=p:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Jailso"
+    }, {
+      "id": "659540b3-7d14-4890-b425-28ce493396c4",
+      "comment": "",
+      "command": "click",
+      "target": "name=envia",
+      "targets": [
+        ["name=envia", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='envia']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65e986f0-913c-403b-9e87-7e0a8c33f838",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=td:nth-child(2) > font > b",
+      "targets": [
+        ["css=td:nth-child(2) > font > b", "css:finder"],
+        ["xpath=//td[2]/font/b", "xpath:position"],
+        ["xpath=//b[contains(.,'8')]", "xpath:innerText"]
+      ],
+      "value": "valor1"
+    }, {
+      "id": "0c298a83-1d1c-48c8-8079-b0a9c6a82ecc",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=tr:nth-child(2) b",
+      "targets": [
+        ["css=tr:nth-child(2) b", "css:finder"],
+        ["xpath=//tr[2]/td/font/b", "xpath:position"],
+        ["xpath=//b[contains(.,'6')]", "xpath:innerText"]
+      ],
+      "value": "valor2"
+    }, {
+      "id": "6452e08d-a611-41ba-87cc-561a9a680428",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return Number(${valor1}) + Number(${valor2})",
+      "targets": [],
+      "value": "resposta"
+    }, {
+      "id": "ea602ef3-456a-4bbf-991c-e3343eb6f864",
+      "comment": "",
+      "command": "click",
+      "target": "name=resposta",
+      "targets": [
+        ["name=resposta", "name"],
+        ["css=p:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='resposta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b9ce53d-7da3-4288-8422-275c3ce5550f",
+      "comment": "",
+      "command": "type",
+      "target": "name=resposta",
+      "targets": [
+        ["name=resposta", "name"],
+        ["css=p:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='resposta']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${resposta}"
+    }, {
+      "id": "b8acfb9d-5b95-4880-bb77-56dfc7216fac",
+      "comment": "",
+      "command": "click",
+      "target": "name=envia",
+      "targets": [
+        ["name=envia", "name"],
+        ["css=p:nth-child(8) > input", "css:finder"],
+        ["xpath=//input[@name='envia']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c628837-da2d-4141-a376-51dc6180f355",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(2) b",
+      "targets": [
+        ["css=p:nth-child(2) b", "css:finder"],
+        ["xpath=//p[2]/font/b", "xpath:position"]
+      ],
+      "value": "Você acertou!!!"
+    }]
+  }],
+  "suites": [{
+    "id": "d9801fd1-fab8-4df6-82c1-363cc13ac380",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4ddd0c37-979a-4d13-b19d-a9db8b827451"]
+  }],
+  "urls": ["http://grupovirtuous.com.br/matkids/game.php"],
+  "plugins": []
+}
